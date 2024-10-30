@@ -38,7 +38,7 @@ const Nav = () => {
           { name: "Home", path: "/" },
           { name: "About me", path: "/about" },
           { name: "Technical skills", path: "/skills" },
-          { name: "Historical projects", path: "/projects" },
+          { name: "My projects", path: "/projects" },
         ].map((item, index) => (
           <motion.div
             key={item.name}

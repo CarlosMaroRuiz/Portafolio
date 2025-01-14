@@ -7,21 +7,7 @@ import { fadeIn, fadeInUp } from "../../animations/animationVariants"; // Verifi
 import { FiEye } from "react-icons/fi"; // Importa un icono opcional para mejorar la UI
 import ImageModal from "./ImageModal";
 
-const images = [
-  {
-    src: "/img/about/teamHack.jpg", // Ruta corregida
-    alt: "Equipo del hackathon",
-    descripcion: "Equipo del hackathon",
-  },
-  {
-    src: "/img/about/Demo.jpeg", // Ruta correcta
-    alt: "Demo de la aplicación",
-    descripcion: "Demo de la aplicación",
-  },
-  // Puedes añadir más imágenes aquí
-];
-
-const ImageGallery = () => {
+const ImageGallery = ({images}) => {
   const controls = useAnimation();
   const [ref, inView] = useInView({
     threshold: 0.2, // 20% del componente debe estar visible para activar la animación

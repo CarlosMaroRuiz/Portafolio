@@ -6,7 +6,7 @@ import { useInView } from "react-intersection-observer";
 import { fadeIn,fadeInUp } from "../../animations/animationVariants";
 import ImageGallery from "./ImageGallery";
 
-const AchievementsSection = () => {
+const AchievementsSection = ({images,title,description}) => {
   const controls = useAnimation();
   const [ref, inView] = useInView({
     threshold: 0.2, // 20% del componente debe estar visible para activar la animación
@@ -20,16 +20,8 @@ const AchievementsSection = () => {
   }, [controls, inView]);
 
   return (
-    <section className="mt-16 z-10 max-w-6xl w-full px-4 relative" ref={ref}>
-      <motion.h2
-        className="text-3xl font-semibold mb-8 text-white text-center"
-        variants={fadeInUp}
-        initial="hidden"
-        animate={controls}
-        transition={{ duration: 0.8, delay: 0.2 }}
-      >
-        Logros
-      </motion.h2>
+    <section className="mt-16 z-10 max-w-6xl w-full px-3 relative" ref={ref}>
+      
       <motion.div
         className="p-6 bg-[#1a1a2e] rounded-lg shadow-lg"
         variants={fadeInUp}
@@ -44,7 +36,7 @@ const AchievementsSection = () => {
           animate={controls}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          Tercer Lugar en Hackathon Chiapas
+          {title}
         </motion.h3>
         <motion.p
           className="text-gray-300 mb-6 text-center"
@@ -53,10 +45,7 @@ const AchievementsSection = () => {
           animate={controls}
           transition={{ duration: 0.8, delay: 0.8 }}
         >
-          Obtuve el tercer lugar en el Hackathon Chiapas, patrocinado por Vara Network, con un proyecto
-          basado en blockchain. En el equipo, desempeñé el rol de Desarrollador Frontend, creando
-          interfaces de usuario dinámicas y reactivas que facilitaron la gestión eficiente de las
-          operaciones del restaurante.
+         {description}
         </motion.p>
         <motion.div
           variants={fadeInUp}
@@ -64,7 +53,7 @@ const AchievementsSection = () => {
           animate={controls}
           transition={{ duration: 0.8, delay: 1.0 }}
         >
-          <ImageGallery />
+          <ImageGallery images = {images}/>
         </motion.div>
       </motion.div>
     </section>

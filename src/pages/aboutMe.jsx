@@ -36,10 +36,18 @@ const AboutMePage = () => {
         <PracticesSection />
         
         {/* Sección de Logros */}
-       <TitleAnimation title={"Logros"}/>
-       <AchievementsSection images={getDataImgHack2()} title={"Primer lugar en el hackaton VaraNetwork en ITAM,CDMX"}  description={`Gané el 1er lugar en el MegaHackathon de Vara Network en el ITAM con Monogatari, una plataforma Web3 que revoluciona el manga mediante blockchain, contratos inteligentes y NFTs. Como Frontend Developer, diseñé una experiencia intuitiva que conecta creadores y lectores globalmente.`}/>
-        <AchievementsSection images={getDataImgHack1()} title={"Tercer en lugar en el hackaton VaraNetwork en Chiapas"}  description={`Obtuve el tercer lugar en el Hackathon Chiapas, patrocinado por Vara Network, con un proyecto basado en blockchain. En el equipo, desempeñé el rol de Desarrollador Frontend`}/>
+       <TitleAnimation title={"Achievements"}/>
+       <AchievementsSection 
+  images={getDataImgHack2()} 
+  title={"First Place at the Vara Network Hackathon at ITAM, Mexico City"} 
+  description={`I won 1st place at the MegaHackathon by Vara Network at ITAM with Monogatari, a Web3 platform revolutionizing manga through blockchain, smart contracts, and NFTs. As a Frontend Developer, I designed an intuitive experience connecting creators and readers globally.`} 
+/>
 
+<AchievementsSection 
+  images={getDataImgHack1()} 
+  title={"Third Place at the Vara Network Hackathon in Chiapas"} 
+  description={`I achieved 3rd place at the Hackathon in Chiapas, sponsored by Vara Network, with a blockchain-based project. In the team, I served as the Frontend Developer.`} 
+/>
 
 
     

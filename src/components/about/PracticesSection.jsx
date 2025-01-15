@@ -5,22 +5,22 @@ import { useInView } from "react-intersection-observer";
 
 const practices = [
   {
-    empresa: "HighTech",
-    descripcion:
-      "Desarrollé plantillas frontend utilizando Blade, Livewire, JavaScript, HTML y Tailwind CSS, para que mi equipo pudiera integrarlas en el proyecto Laravel para su renderización.",
+    company: "HighTech",
+    description:
+      "Developed frontend templates using Blade, Livewire, JavaScript, HTML, and Tailwind CSS, allowing my team to integrate them into the Laravel project for rendering.",
   },
   {
-    empresa: "IMA Chiapas",
-    descripcion:
-      "Trabajé en un proyecto llamado ERP Restaurantes, donde integré tecnologías frontend como React.js utilizando TypeScript y Tailwind CSS, junto con la librería de componentes Flowbite para agilizar el desarrollo.",
+    company: "IMA Chiapas",
+    description:
+      "Worked on a project called ERP Restaurants, where I integrated frontend technologies such as React.js using TypeScript and Tailwind CSS, along with the Flowbite component library to speed up development.",
   },
 ];
 
 const PracticesSection = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView({
-    threshold: 0.2, // Porcentaje del componente que debe estar visible para activar la animación
-    triggerOnce: true, // La animación solo se ejecuta una vez
+    threshold: 0.2, // Percentage of the component that must be visible to trigger the animation
+    triggerOnce: true, // The animation only runs once
   });
 
   React.useEffect(() => {
@@ -29,7 +29,7 @@ const PracticesSection = () => {
     }
   }, [controls, inView]);
 
-  // Definir variantes de animación
+  // Define animation variants
   const containerVariants = {
     hidden: {},
     visible: {
@@ -54,7 +54,7 @@ const PracticesSection = () => {
         animate={controls}
         transition={{ duration: 0.8, delay: 0.2 }}
       >
-        Lugares donde hice prácticas
+        Places Where I Did Internships
       </motion.h2>
       <motion.div
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
@@ -71,9 +71,9 @@ const PracticesSection = () => {
             whileHover={{ scale: 1.05 }}
           >
             <h3 className="text-2xl font-semibold mb-2 text-[#8e69ff]">
-              {practice.empresa}
+              {practice.company}
             </h3>
-            <p className="text-gray-300">{practice.descripcion}</p>
+            <p className="text-gray-300">{practice.description}</p>
           </motion.div>
         ))}
       </motion.div>

@@ -1,44 +1,33 @@
-export const getDataImgHack1 = ()=>{
-
-const images = [
- 
+export const getDataImgHack1 = () => {
+  const images = [
     {
-      src: "/img/about/Demo.jpeg", 
-      alt: "Demo de la aplicación",
-      descripcion: "Demo de la aplicación",
+      src: "/img/about/Demo.jpeg",
+      alt: "Application Demo",
+      descripcion: "Demo of the application",
     },
-   
   ];
 
-  return images
-}
+  return images;
+};
 
-export const getDataImgHack2 = ()=>{
+export const getDataImgHack2 = () => {
+  const images = [
+    {
+      src: "/img/about/Monogatori.png",
+      alt: "Login Screen",
+      descripcion: "Application login using a web3-to-web2 abstraction for user convenience",
+    },
+    {
+      src: "/img/about/vara.png",
+      alt: "Hackathon Team",
+      descripcion: "Hackaton Team",
+    },
+    {
+      src: "/img/about/Monogatori4.png",
+      alt: "NFT Collection",
+      descripcion: "NFT collection for application users",
+    },
+  ];
 
-    const images = [
-     
-        {
-          src: "/img/about/Monogatori.png", 
-          alt: "LandignLogin",
-          descripcion: "Login de la aplicacion que utiliza una abstacion de web3 a web2 para facilidad de usuarios",
-        },
-
-        {
-            src: "/img/about/Monogatori2.png", 
-            alt: "Contenido Manga",
-            descripcion: "Contenido Manga de la app",
-          },
-          {
-            src: "/img/about/Monogatori4.png", 
-            alt: "Collecion Nft",
-            descripcion: "Collecion Nft para usuarios de la aplicacion",
-          },
-
-          
-
-       
-      ];
-    
-      return images
-      
-    }
+  return images;
+};

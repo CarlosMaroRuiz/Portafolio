@@ -1,4 +1,3 @@
-
 import React from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -7,8 +6,8 @@ import { fadeInUp } from "../../animations/animationVariants";
 const HeaderSection = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView({
-    threshold: 0.2, // Porcentaje del componente que debe ser visible para activar la animación
-    triggerOnce: true, // Solo activar una vez
+    threshold: 0.2, // Percentage of the component that must be visible to trigger the animation
+    triggerOnce: true, // Only trigger once
   });
 
   React.useEffect(() => {
@@ -26,7 +25,7 @@ const HeaderSection = () => {
         animate={controls}
         transition={{ duration: 0.8, delay: 0.2 }}
       >
-        Sobre Mí
+        About Me
       </motion.h1>
       <motion.p
         className="text-gray-300 max-w-xl mx-auto mt-4"
@@ -35,7 +34,7 @@ const HeaderSection = () => {
         animate={controls}
         transition={{ duration: 0.8, delay: 0.4 }}
       >
-        Me apasiona el desarrollo web y soy una persona curiosa en Python.
+        I am passionate about web development and a curious Python enthusiast.
       </motion.p>
     </section>
   );

@@ -54,7 +54,7 @@ const PracticesSection = () => {
         animate={controls}
         transition={{ duration: 0.8, delay: 0.2 }}
       >
-        Places Where I Did Internships
+        Places where I have practiced
       </motion.h2>
       <motion.div
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"

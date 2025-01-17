@@ -40,7 +40,7 @@ const AboutMePage = () => {
        <AchievementsSection 
   images={getDataImgHack2()} 
   title={"First Place at the Vara Network Hackathon at ITAM, Mexico City"} 
-  description={`I won 1st place at the MegaHackathon by Vara Network at ITAM with Monogatari, a Web3 platform revolutionizing manga through blockchain, smart contracts, and NFTs. As a Frontend Developer, I designed an intuitive experience connecting creators and readers globally.`} 
+  description={`I won 1st place at the MegaHackathon by Vara Network at ITAM with Monogatari, a Web3 platform revolutionizing manga through blockchain, smart contracts, and NFTs. As a Frontend Developer.`} 
 />
 
 <AchievementsSection 
